@@ -1,49 +1,38 @@
-# waybox_test
-wanna start ur career as EE??
+# Waybox Hardware Design Exam 🛠️
 
-# Waybox Hardware Design Exam
-Overview
-This assessment contains three questions that test your ability to review hardware projects, reason about power & display interfaces, and communicate your findings.
-You will work on two existing projects:
+Welcome!  
+This take‑home test assesses your ability to **review hardware projects, reason about power & display interfaces, and communicate clearly**.  
+You will work with two existing Altium/Protel projects:
 
-File	Board nickname & Purpose (high‑level)
-DOUBLE_CAMERA_SCARY.eprj	Board #1	Dual‑camera interface & processing
-OMO ‑ WayBox.eprj	Board #2	Main control board (“WayBox”)
+| File | Board nickname | High‑level purpose |
+|------|----------------|--------------------|
+| `DOUBLE_CAMERA_SCARY.eprj` | **Board #1** | Dual‑camera interface & processing |
+| `OMO ‑ WayBox.eprj`       | **Board #2** | Main control board (“WayBox”) |
 
-❓ Questions & Tasks
-#	Task	Expected deliverables
-1. Design review & fix	Open DOUBLE_CAMERA_SCARY.eprj.
-• List every design flaw you spot (signal‑integrity, power, layout, footprints, net naming …)
-• Fix the project (schematic or PCB) so it is production‑ready.
-• Commit your patched .eprj (and any edited libs) under a folder fixed/board1/.	- fixed/board1/DOUBLE_CAMERA_SCARY.eprj
-•A Markdown bullet list of each issue before / after in README.md
-2. Power feasibility	Suppose you power Board #2 (OMO ‑ WayBox.eprj) board2 rail directly from a 3 .3 V MCU GPIO pin.
-• Will Board #2 still be able to drive a 40‑pin RGB565 TFT‑LCD reliably?
-• Explain why / why not (voltage levels, current capability, LCD back‑light, rise‑time, latch timings …)	- A paragraph in README.md
-- Cite datasheet figures or equations where relevant
-3. Functional summary	Write an engineer‑level overview of what each board does and how they interact. Focus on: key ICs, I/O headers, intended use‑cases, typical power budget.	- Section “Board summaries” in README.md (100 – 200 words per board)
+---
 
-🚀 Submission workflow
-Fork via template
+## 📋 Questions & Deliverables
 
-Click Use this template → choose Private.
+| # | Task | What you must submit |
+|---|------|---------------------|
+| **1 – Design review & fix** | *Open* **`DOUBLE_CAMERA_SCARY.eprj`**.<br>1. List **every design flaw** you identify (signal‑integrity, power, layout, footprints, net naming, etc.).<br>2. **Fix the project** (schematic and/or PCB) so it is production‑ready.<br>3. Place the corrected files in `fixed/board1/`. | - `fixed/board1/DOUBLE_CAMERA_SCARY.eprj` (+ any edited libraries)<br>- A bullet list of each issue **before / after** in `README.md` |
+| **2 – Power feasibility** | Suppose **Board #2** is powered only by a **3 .3 V MCU GPIO pin** on *board2* rail.<br>- Can Board #2 still **drive a 40‑pin RGB565 TFT‑LCD** reliably?<br>- *Why or why not?* (consider voltage levels, current, back‑light, rise‑time, latch timing, etc.) | A ±150‑word explanation in `README.md`, citing datasheet numbers or equations. |
+| **3 – Functional summary** | Provide an engineer‑level summary of **what each board does** and how they interact. Mention key ICs, I/O headers, intended use‑cases, typical power budget. | Section **“Board summaries”** in `README.md` (≈ 100–200 words per board). |
 
-Name the repo waybox‑exam‑<your‑GitHub‑ID>.
+---
 
-Add the examiner
+## 🚀 Submission Workflow
 
-Settings → Collaborators → invite CodingMcnugget with Write access.
+1. **Create your private repo**  
+   1. Click **“Use this template”** (top‑right).  
+   2. **Visibility → Private**.  
+   3. Name it `waybox‑exam‑<your‑github‑id>`.
 
-Work
+2. **Invite the examiner**  
+   - Settings → Collaborators → **add `CodingMcnugget`** with *Write* access.
 
-Create a feature branch answers/first_push (or any name you like).
-
-Commit often with meaningful messages.
-
-Delivery
-
-Open a Pull Request into main titled “Exam submission – <your name>”.
-
-Make sure README.md contains answers for Q1‑Q3.
-
-Verify that fixed/board1/ holds your corrected project file(s).
+3. **Work**  
+   ```bash
+   # example local setup
+   git clone git@github.com:<you>/waybox-exam-<id>.git
+   git checkout -b answers/first_push
