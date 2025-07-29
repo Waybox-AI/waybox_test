@@ -13,10 +13,10 @@ OMO ‑ WayBox.eprj	Board #2	Main control board (“WayBox”)
 ❓ Questions & Tasks
 #	Task	Expected deliverables
 1. Design review & fix	Open DOUBLE_CAMERA_SCARY.eprj.
-1. List every design flaw you spot (signal‑integrity, power, layout, footprints, net naming …)
-2. Fix the project (schematic or PCB) so it is production‑ready.
-3. Commit your patched .eprj (and any edited libs) under a folder fixed/board1/.	- fixed/board1/DOUBLE_CAMERA_SCARY.eprj
-- A Markdown bullet list of each issue before / after in README.md
+• List every design flaw you spot (signal‑integrity, power, layout, footprints, net naming …)
+• Fix the project (schematic or PCB) so it is production‑ready.
+• Commit your patched .eprj (and any edited libs) under a folder fixed/board1/.	- fixed/board1/DOUBLE_CAMERA_SCARY.eprj
+•A Markdown bullet list of each issue before / after in README.md
 2. Power feasibility	Suppose you power Board #2 (OMO ‑ WayBox.eprj) board2 rail directly from a 3 .3 V MCU GPIO pin.
 • Will Board #2 still be able to drive a 40‑pin RGB565 TFT‑LCD reliably?
 • Explain why / why not (voltage levels, current capability, LCD back‑light, rise‑time, latch timings …)	- A paragraph in README.md
