@@ -2,7 +2,7 @@
 
 Welcome!  
 This take‑home test assesses your ability to **review hardware projects, reason about power & display interfaces, and communicate clearly**.  
-You will work with two existing Altium/Protel projects:
+You will work with two existing projects:
 
 | File | Board nickname | High‑level purpose |
 |------|----------------|--------------------|
